@@ -47,6 +47,10 @@ int main()
 	}
 	for(int i=0;i<n;i++)
 	{
-		cout<<a[i]<<" ";
-	}	
+		arr[i]=a[i];
+	}
+	for(int i=0;i<n;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
 }
