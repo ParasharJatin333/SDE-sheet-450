@@ -17,4 +17,17 @@ using namespace std;
 const int N = 1e5+2, MOD = 1e9+7;
 //int array[N];
 //cout << (condition ? "YES\n" : "NO\n");
-//revision
+    Node* reverseList(Node *head)
+    {
+        // code here
+        // return head of reversed list
+        if(!head || !head->next){
+            return head;
+        }
+        Node* rest= reverseList(head->next);
+        head->next->next=head;
+        
+        head->next=NULL;
+        
+        return rest;
+    }
